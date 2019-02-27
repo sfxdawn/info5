@@ -15,5 +15,9 @@ def create_app(config_name):
 	db.init_app(app)     # 这句代码就等效于 db=SQLAlchemy(app) 这叫把app和程序实例进行关联
 						# 但是这句话还有一个作用,就是app一创造出来,就和db关联了,现在db已经和app关联了.
 	Session(app)
+	#注册蓝图
+	from info.modules.index import index_blue
+	app.register_blueprint(index_blue)
+
 	return app
 
