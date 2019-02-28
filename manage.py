@@ -1,5 +1,4 @@
 from info import create_app,db,models
-from flask import session
 from flask_script import Manager
 
 

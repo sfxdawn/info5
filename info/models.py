@@ -196,3 +196,5 @@ class Category(BaseModel, db.Model):
             "name": self.name
         }
         return resp_dict
+
+

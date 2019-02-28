@@ -2,12 +2,300 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a325c257-e713-477e-9bda-69b68651a2cd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/info/modules/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/info/modules/index/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/info/modules/index/views.py" />
-      <change beforePath="$PROJECT_DIR$/helloworld.py" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/shifuxiao.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/info5.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/libs/yuntongxun/CCPRestSDK.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/libs/yuntongxun/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/libs/yuntongxun/sms.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/libs/yuntongxun/xmltojson.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/modules/passport/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/modules/passport/views.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/css/jquery.pagination.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/css/main.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/css/reset.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/html/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/html/login.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/html/news_edit.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/html/news_edit_detail.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/html/news_review.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/html/news_review_detail.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/html/news_type.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/html/user_count.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/html/user_list.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/images/icons.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/images/login-bg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/images/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/images/person.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/js/echarts.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/js/jquery-1.12.4.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/js/jquery.form.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/js/jquery.pagination.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/js/news_edit_detail.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/js/news_review_detail.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/js/news_type.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/js/tinymce_setup.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/LICENSE.TXT" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/changelog.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/jquery.tinymce.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/langs/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/langs/zh_CN.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/license.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/advlist/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/anchor/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/autolink/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/autoresize/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/autosave/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/bbcode/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/charmap/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/code/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/codesample/css/prism.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/codesample/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/colorpicker/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/directionality/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-cool.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-cry.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-embarassed.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-frown.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-innocent.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-kiss.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-laughing.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-sealed.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-surprised.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-undecided.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-wink.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/img/smiley-yell.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/emoticons/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/fullpage/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/help/img/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/help/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/hr/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/image/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/imagetools/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/imageupload/css/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/imageupload/img/icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/imageupload/jquery.iframe-post-form.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/imageupload/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/imageupload/uncompressed/css/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/imageupload/uncompressed/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/importcss/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/legacyoutput/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/link/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/lists/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/media/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/noneditable/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/paste/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/preview/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/print/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/save/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/tabfocus/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/table/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/template/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/textcolor/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/textpattern/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/toc/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/visualblocks/css/visualblocks.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/visualchars/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/plugins/wordcount/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/content.inline.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/content.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/content.mobile.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-mobile.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/img/anchor.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/img/loader.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/img/object.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/img/trans.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/skin.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/skins/lightgray/skin.mobile.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/themes/inlite/theme.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/themes/mobile/theme.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/themes/modern/theme.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/admin/tinymce/js/tinymce/tinymce.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/css/jquery.pagination.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/css/main.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/css/reset.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/html/404.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/html/detail.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/html/other.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/html/user.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/html/user_base_info.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/html/user_collection.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/html/user_follow.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/html/user_news_list.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/html/user_news_release.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/html/user_pass_info.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/html/user_pic_info.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/cat.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/clock.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/collect_icons.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/comment_icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/focus_icons.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/hit_icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/news_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/not_found.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/person.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/person01.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/person02.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/person03.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/pic_code.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/reply_icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/shutoff.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/tip_bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/user_pic.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/worm.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/images/zan_icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/js/detail.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/js/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/js/jquery-1.12.4.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/js/jquery.form.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/js/jquery.pagination.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/js/main.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/js/other.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/js/tinymce_setup.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/js/user_base_info.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/js/user_follow.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/js/user_news_release.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/js/user_pass_info.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/js/user_pic_info.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/LICENSE.TXT" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/changelog.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/jquery.tinymce.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/langs/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/langs/zh_CN.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/license.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/advlist/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/anchor/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/autolink/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/autoresize/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/autosave/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/bbcode/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/charmap/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/code/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/codesample/css/prism.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/codesample/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/colorpicker/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/directionality/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-cool.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-cry.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-embarassed.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-frown.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-innocent.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-kiss.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-laughing.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-sealed.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-surprised.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-undecided.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-wink.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/img/smiley-yell.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/emoticons/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/fullpage/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/help/img/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/help/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/hr/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/image/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/imagetools/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/imageupload/css/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/imageupload/img/icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/imageupload/jquery.iframe-post-form.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/imageupload/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/imageupload/uncompressed/css/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/imageupload/uncompressed/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/importcss/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/legacyoutput/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/link/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/lists/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/media/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/noneditable/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/paste/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/preview/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/print/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/save/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/tabfocus/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/table/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/template/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/textcolor/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/textpattern/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/toc/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/visualblocks/css/visualblocks.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/visualchars/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/plugins/wordcount/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/content.inline.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/content.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/content.mobile.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-mobile.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/img/anchor.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/img/loader.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/img/object.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/img/trans.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/skin.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/skins/lightgray/skin.mobile.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/themes/inlite/theme.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/themes/mobile/theme.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/themes/modern/theme.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/static/news/tinymce/js/tinymce/tinymce.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/templates/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/templates/news/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/templates/news/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/utils/captcha/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/utils/captcha/captcha.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/utils/captcha/fonts/Arial.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/utils/captcha/fonts/Georgia.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/utils/captcha/fonts/actionj.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/info/utils/response_code.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/logs/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/config.py" afterPath="$PROJECT_DIR$/config.py" />
       <change beforePath="$PROJECT_DIR$/info/__init__.py" afterPath="$PROJECT_DIR$/info/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/info/models.py" afterPath="$PROJECT_DIR$/info/models.py" />
+      <change beforePath="$PROJECT_DIR$/info/modules/index/views.py" afterPath="$PROJECT_DIR$/info/modules/index/views.py" />
       <change beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +306,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/info5$manage.coverage" NAME="manage Coverage Results" MODIFIED="1551274356511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/info5$manage.coverage" NAME="manage Coverage Results" MODIFIED="1551335293854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/info5$helloworld.coverage" NAME="helloworld Coverage Results" MODIFIED="1539946332589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -55,28 +343,41 @@
     </expand>
     <select />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/info/modules/index/views.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/info/modules/passport/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="687">
+              <caret line="176" column="0" lean-forward="true" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#0#62#0" expanded="true" />
+                <element signature="e#328#818#1" expanded="false" />
+                <element signature="e#884#1378#1" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/manage.py">
+      <file leaf-file-name="sms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/info/libs/yuntongxun/sms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="797">
+              <caret line="72" column="21" lean-forward="true" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/info/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,20 +385,8 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/info/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/info/modules/index/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="23" column="118" lean-forward="false" selection-start-line="23" selection-start-column="118" selection-end-line="23" selection-end-column="118" />
               <folding />
             </state>
           </provider>
@@ -116,20 +405,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/manage.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/info/modules/passport/views.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config.ini" />
         <option value="$PROJECT_DIR$/helloworld.py" />
         <option value="$PROJECT_DIR$/info/constants.py" />
-        <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/info/__init__.py" />
-        <option value="$PROJECT_DIR$/manage.py" />
-        <option value="$PROJECT_DIR$/info/modules/index/views.py" />
         <option value="$PROJECT_DIR$/info/modules/index/__init__.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/info/templates/news/index.html" />
+        <option value="$PROJECT_DIR$/info/models.py" />
+        <option value="$PROJECT_DIR$/info/utils/captcha/captcha.py" />
+        <option value="$PROJECT_DIR$/info/modules/index/views.py" />
+        <option value="$PROJECT_DIR$/info/modules/passport/__init__.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/info/static/news/js/main.js" />
+        <option value="$PROJECT_DIR$/info/libs/yuntongxun/sms.py" />
+        <option value="$PROJECT_DIR$/info/__init__.py" />
+        <option value="$PROJECT_DIR$/info/modules/passport/views.py" />
       </list>
     </option>
   </component>
@@ -190,6 +488,19 @@
               <item name="info5" type="462c0819:PsiDirectoryNode" />
               <item name="info" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="info5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="info5" type="462c0819:PsiDirectoryNode" />
+              <item name="info" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="info5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="info5" type="462c0819:PsiDirectoryNode" />
+              <item name="info" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="yuntongxun" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -200,15 +511,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/info/templates/news" />
+      <recent name="$PROJECT_DIR$/info/static/news/html" />
       <recent name="$PROJECT_DIR$/info" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/info/libs" />
+      <recent name="$PROJECT_DIR$/info/utils" />
       <recent name="$PROJECT_DIR$/info" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -345,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551272764471</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="创建蓝图,分离视图">
+      <created>1551275040046</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1551275040046</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -357,8 +679,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753327" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38894576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10622711" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5209826" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.113553114" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -407,73 +729,19 @@
     <MESSAGE value="创建启动文件使用配置信息,实现session信息的存储" />
     <MESSAGE value="拆分 ap到info目录下定义工厂函数" />
     <MESSAGE value="导入模型类,执行数据库的迁移" />
-    <option name="LAST_COMMIT_MESSAGE" value="导入模型类,执行数据库的迁移" />
+    <MESSAGE value="创建蓝图,分离视图" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建蓝图,分离视图" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/helloworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld.py" />
+    <entry file="file://$PROJECT_DIR$/helloworld.py" />
+    <entry file="file://$PROJECT_DIR$/helloworld.py" />
     <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -481,14 +749,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld.py" />
     <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -496,14 +757,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld.py" />
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -595,67 +849,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/py4_flask/lib/python3.7/site-packages/flask_session/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2447">
           <caret line="91" column="60" lean-forward="false" selection-start-line="91" selection-start-column="60" selection-end-line="91" selection-end-column="60" />
-          <folding>
-            <element signature="e#238#247#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/py4_flask/lib/python3.7/site-packages/flask/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/py4_flask/lib/python3.7/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5063">
-          <caret line="100" column="26" lean-forward="true" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld.py" />
     <entry file="file://$PROJECT_DIR$/../info7/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/info/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,25 +868,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1">
           <caret line="587" column="0" lean-forward="false" selection-start-line="587" selection-start-column="0" selection-end-line="587" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="39" column="14" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/py4_flask/lib/python3.7/site-packages/werkzeug/security.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/info/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="19">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
+    <entry file="file://$USER_HOME$/.virtualenvs/py4_flask/lib/python3.7/site-packages/flask/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="16094">
+          <caret line="816" column="23" lean-forward="false" selection-start-line="816" selection-start-column="23" selection-end-line="816" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/py4_flask/lib/python3.7/site-packages/flask/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/modules/index/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/py4_flask/lib/python3.7/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6691">
+          <caret line="508" column="22" lean-forward="false" selection-start-line="508" selection-start-column="22" selection-end-line="508" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -689,44 +945,120 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3091">
+          <caret line="410" column="18" lean-forward="true" selection-start-line="410" selection-start-column="18" selection-end-line="410" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/py4_flask/lib/python3.7/site-packages/werkzeug/routing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="1103" column="23" lean-forward="false" selection-start-line="1103" selection-start-column="23" selection-end-line="1103" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/modules/passport/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/info/modules/index/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="988">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/info/__init__.py">
+    <entry file="file://$PROJECT_DIR$/info/utils/captcha/captcha.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="437">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/info/modules/index/__init__.py">
+    <entry file="file://$PROJECT_DIR$/info/utils/response_code.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="437">
+          <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/static/news/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="217" column="0" lean-forward="true" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/templates/news/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="160" column="11" lean-forward="false" selection-start-line="160" selection-start-column="11" selection-end-line="160" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="361">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/utils/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/info/libs/yuntongxun/CCPRestSDK.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="118" lean-forward="false" selection-start-line="23" selection-start-column="118" selection-end-line="23" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/libs/yuntongxun/sms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="797">
+          <caret line="72" column="21" lean-forward="true" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/modules/passport/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="176" column="0" lean-forward="true" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#62#0" expanded="true" />
+            <element signature="e#328#818#1" expanded="false" />
+            <element signature="e#884#1378#1" expanded="false" />
           </folding>
         </state>
       </provider>
