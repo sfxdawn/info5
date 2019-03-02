@@ -179,6 +179,40 @@ function sendSMSCode() {
     }
 
     // TODO 发送短信验证码
+    // 定义对象存储参数
+    var params={
+        "mobile":mobile,
+        "image_code":imageCode,
+        "image_code_id":imageCodeId
+    };
+    // 发送post请求,1000就是1秒,
+    $.ajax({
+        url:"/sms_code",
+        type:"post",
+        data:JSON.stringify(params),  //把对象转成json字符串
+        contentType:"application/json",  // 发送到后端的数据格式,dataType 后端返回的数据格式
+        success:function(resp){
+            if(resp.errno=="0"){
+                //定义倒计时对象
+                var num=60;
+                var t =setInterval(function(){
+                    if(num==1){
+                        clearInterval(t);
+                        $('.get_code').html('点击获取验证码');
+                        $('.get_code').attr('onclick','sendSMSCode();')
+                    }else{
+                        num -=1;
+                        $('.get_code').html(num+'秒')
+                    }
+                },1000)
+            }else{
+                alert(resp.errmsg)
+
+            }
+        }
+    })
+
+
 }
 
 // 调用该函数模拟点击左侧按钮

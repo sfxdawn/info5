@@ -1,10 +1,10 @@
-from flask import request, jsonify, current_app, make_response
-from random import random
+from flask import request, jsonify, current_app, make_response, session
+import random
 from info.libs.yuntongxun import sms
 from . import passport_blue
 from info.utils.response_code import RET
 from info.utils.captcha.captcha import captcha
-from info import redis_store,constants
+from info import redis_store,constants,db
 # 导入模型类
 from info.models import User
 import re
@@ -147,7 +147,7 @@ def send_sms_code():
 		return jsonify(errno=RET.DBERR,errmsg='查询用户数据失败')
 	else:
 		# 判断查询结果是否存在
-		if user is None:
+		if user is not None:
 			return jsonify(errno=RET.DATAEXIST,errmsg='用户已存在')
 	#生成6位数短信随机数,使用随机数模块
 	sms_code='%06d' % random.randint (0, 999999)
@@ -169,7 +169,77 @@ def send_sms_code():
 	else:
 		return jsonify(errno=RET.THIRDERR,errmsg='发送失败')
 
+@passport_blue.route('/register',method=['POST'])
+def register():
+	"""
+	用户注册
+	1、获取参数,mobile,sms_code,password
+	2、检查参数的完整性
+	3、检查手机号的格式
+	4、检查短信验证码,尝试从Redis数据库中获取真实的短信验证码
+	5、判断获取结果是否过期
+	6、先比较短信验证码是否一致
+	7、删除Redis数据库中的短信验证码
+	8、构造模型类对象
+	user=User()
+	user.password=password
+	9、提交数据到数据库中,mysql
+	10、把用户基本信息缓存到Redis数据库中
+	session['user_id']=user.id
+	session['mobile']=mobile
+	session['nick_name']=mobile
+	11、返回结果
 
+	:return:
+	"""
+	mobile=request.json.get('mobile')
+	sms_code=request.json.get('sms_code')
+	password=request.json.get('password')
+
+	# 检查参数完整性
+	if not all([mobile,sms_code,password]):
+		return jsonify(errno=RET.PARAMERR,errmsg='参数缺失')
+	# 检查手机号格式
+	if not re.match(r'1[3456789]\d{9}$',mobile):
+		return jsonify(errno=RET.PARAMERR,errmsg='手机号格式错误')
+	# 尝试从Redis中获取真实的短信验证码
+	try:
+		real_sms_code=redis_store.get('SMSCode_'+mobile)
+	except Exception as e:
+		current_app.logger.error(e)
+		return jsonify(errno=RET.DBERR,errmsg='查询短信验证码失败')
+	# 判断查询结果
+	if not real_sms_code:
+		return jsonify(errno=RET.NODATA,errmsg='短信验证码已过期')
+	# 比较短信验证码是否正确
+	if real_sms_code !=str(sms_code):
+		return jsonify(errno=RET.DATAERR,errmsg='短信验证码不一致')
+	# 删除redis数据库中存储的短信验证码
+	try:
+		redis_store.delete('SMSCode_'+mobile)
+	except Exception as e:
+		current_app.logger.error(e)
+	# 构造模型类对象
+	user=User()
+	user.mobile=mobile
+	user.nick_name=mobile
+	# 调用了模型类中的generate_password_hash实现了密码 加密储存,sha256
+	user.password=password
+	# 提交用户注册信息数据到mysql数据库中
+	try:
+		db.session.add(user)
+		db.session.commit()
+	except Exception as e:
+		current_app.logger.error(e)
+		# 存储数据如果发生异常,需要进行回滚
+		db.session.rollback()
+		return jsonify(errno=RET.DBERR,errmsg='保存用户数据失败')
+	# 返回用户信息到Redis数据库中
+	session['user_id']=user.id
+	session['mobile']=mobile
+	session['nick_name']=mobile
+	# 返回结果
+	return jsonify(errno=RET.OK,errmsg='注册成功')
 
 
 
