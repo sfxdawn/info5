@@ -1,4 +1,4 @@
-from flask import session, render_template, current_app, jsonify
+from flask import session, render_template, current_app, jsonify, request
 
 from info import constants
 from info.models import User, News, Category
@@ -35,7 +35,7 @@ def index():
         except Exception as e:
             current_app.logger.error(e)
 
-    #  点击排行---------------------------------------------------------------------
+    #  点击排行------------------------⭐️---------------------------------------------
     try:
         news_list=News.query.order_by(News.clicks.desc()).limit(constants.CLICK_RANK_MAX_NEWS)
     except Exception as e:
@@ -53,7 +53,7 @@ def index():
         news_dict_list.append(news.to_dict())
 
 
-    #  首页新闻分类------------------------------------------------------------------------
+    #  首页新闻分类-----------------------⭐️-------------------------------------------------
     try:
         categories=Category.query.all()
     except Exception as e:
@@ -76,6 +76,84 @@ def index():
     }
 
     return render_template('news/index.html',data=data)
+
+@index_blue.route('/news_list')
+def get_news_list():
+    """
+    首页新闻列表数据
+    1、获取get请求的参数信息,cid默认为1、page默认第一页、per_page默认每页10条,False 表示分页异常不报错🍁
+    2、需要对参数转成int类型,
+    3、查询数据库
+    if cid>1:
+        paginate=News.query.filter(News.category_id=cid).order_by(News.create_time.desc()).paginate(page,per_page,False)
+    else:
+        paginate=News.query.filter().order_by(News.create_time.desc()).paginate(page,per_page,False)
+
+    4、获取分页后的新闻数据
+    news_list=paginate.items  分页后的新闻数据
+    total_page=paginate.pages  分页后的总页数
+    current_page=paginate.page   分页后的的当前页数
+
+    5、遍历分页后的新闻数据,调用模型类中的to_dict方法
+    6、定义临时列表存储新闻数据
+    7、返回data数据,新闻列表、总页数、当前页数
+
+    :return:
+    """
+   #-----------------------⭐️-------------------------------------------------
+    # 获取参数
+    cid=request.args.get('cid','1')
+    page=request.args.get('page','1')
+    per_page=request.args.get('per_page','10')
+
+    # 转换参数的数据类型
+    try:
+        cid,page,per_page=int(cid),int(page),int(per_page)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.PARAMERR,errmsg='参数格式错误')
+    # 根据分类id查询数据库
+    filters=[]
+    if cid>1:
+
+        # filters在ipython代码中测试,添加的是true或false,
+        # filters 在flask_sqlalchemy中添加的是 sqlalchemy对象,新闻分类数据对象
+        filters.append(News.category_id==cid)
+    try:
+        # 新闻列表查询,默认按照新闻的发布时间倒序排序,对排序结果进行分页,每页10条新闻,False表示分页异常不报错
+        paginate=News.query.filter(*filters).order_by(News.create_time.desc()).paginate(page,per_page,False)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR,errmsg='查询新闻列表数据失败')
+    # 获取分页后的新闻列表,总页数,当前页数
+    news_list=paginate.items
+    total_page=paginate.pages
+    current_page=paginate.page
+
+    #遍历新闻列表,转成新闻字典数据
+    news_dict_list=[]
+    for news in news_list:
+        news_dict_list.append(news.to_dict())
+    data={
+        'news_dict_list':news_dict_list,
+        'total_page':total_page,
+        'current_page':current_page
+    }
+    return jsonify(errno=RET.OK,errmsg='OK',data=data)
+
+
+
+
+    pass
+
+
+
+
+# def fun(f):
+#     def wrapper(*args,**kwargs):
+#         print('wrapper run')
+#     return wrapper
+
 
 @index_blue.route('/favicon.ico')
 def favicon():
