@@ -91,11 +91,11 @@ $(function(){
 		}
 		$(this).addClass('active').siblings().removeClass('active');
 		$(this).find('a')[0].click()
-	})
+	});
 
     // TODO 登录表单提交
     $(".login_form_con").submit(function (e) {
-        e.preventDefault()
+        e.preventDefault();
         var mobile = $(".login_form #mobile").val()
         var password = $(".login_form #password").val()
 
@@ -110,13 +110,42 @@ $(function(){
         }
 
         // 发起登录请求
-    })
+        var params={
+            "mobile":mobile,
+            "password":password
+
+        };
+
+        // $.get 和$.post是$.ajax的简写形式; 只具有ajax 的部分属性;type:delete、put、patch、
+        // $.ajax (XmlHttpRequest)具有异步网络请求的所有属性;
+
+        $.ajax({
+            url:"/login",
+            type:"post",
+            data:JSON.stringify(params),
+            contentType:'application/json',
+            headers:{
+                'X-CSRFToken':getCookie('csrf_token')
+
+            },
+            success:function (resp) {
+                if (resp.errno=="0"){
+                    location.reload()
+                }else{
+                    alert(resp.errmsg)
+                }
+
+            }
+
+        })
+
+    });
 
 
-    // TODO 注册按钮点击
+    //  注册按钮点击
     $(".register_form_con").submit(function (e) {
-        // 阻止默认提交操作
-        e.preventDefault()
+        // 阻止浏览器对表单的默认提交操作
+        e.preventDefault();
 
 		// 取到用户输入的内容
         var mobile = $("#register_mobile").val()
@@ -144,13 +173,35 @@ $(function(){
         }
 
         // 发起注册请求
+        var params={
+            "mobile":mobile,
+            "sms_code":smscode,
+            "password":password
+        };
+        $.ajax({
+            url:"/register",
+            type:"post",
+            data:JSON.stringify(params),
+            contentType:"application/json",
+            headers:{
+                            'X-CSRFToken':getCookie('csrf_token')
+
+                        },
+            success:function(resp){
+                if(resp.errno=="0"){
+                    location.reload()
+                }else{
+                    alert(resp.errmsg)
+                }
+            }
+        })
 
     })
 });
 
 var imageCodeId = "";
 
-// TODO 生成一个图片验证码的编号，并设置页面中图片验证码img标签的src属性
+//  生成一个图片验证码的编号，并设置页面中图片验证码img标签的src属性
 function generateImageCode() {
     imageCodeId=generateUUID();
     var url='/image_code?image_code_id='+imageCodeId;
@@ -190,6 +241,10 @@ function sendSMSCode() {
         url:"/sms_code",
         type:"post",
         data:JSON.stringify(params),  //把对象转成json字符串
+        headers:{
+                        'X-CSRFToken':getCookie('csrf_token')
+
+                    },
         contentType:"application/json",  // 发送到后端的数据格式,dataType 后端返回的数据格式
         success:function(resp){
             if(resp.errno=="0"){
@@ -199,7 +254,7 @@ function sendSMSCode() {
                     if(num==1){
                         clearInterval(t);
                         $('.get_code').html('点击获取验证码');
-                        $('.get_code').attr('onclick','sendSMSCode();')
+                        $('.get_code').attr('onclick','sendSMSCode()')
                     }else{
                         num -=1;
                         $('.get_code').html(num+'秒')
@@ -248,4 +303,12 @@ function generateUUID() {
         return (c=='x' ? r : (r&0x3|0x8)).toString(16);
     });
     return uuid;
+}
+
+
+//退出登录
+function logout(){
+    $.get("/logout",function(resp){
+        location.reload()
+    })
 }

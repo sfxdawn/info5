@@ -8,6 +8,8 @@ from info import redis_store,constants,db
 # 导入模型类
 from info.models import User
 import re
+from datetime import datetime
+
 """
 json.loads:把json字符串转成字典
 	json.dumps: 把字典转成json字符串
@@ -83,7 +85,6 @@ def generate_image_code():
 		return jsonify(errno=RET.DBERR,errmsg='保存图片验证码失败')
 	else:
 		response=make_response(image)
-
 		# 默认的响应报文Content-Type:text/html,应该修改默认的响应报文
 		response.headers['Content-Type']='image/jpg'
 
@@ -151,6 +152,7 @@ def send_sms_code():
 			return jsonify(errno=RET.DATAEXIST,errmsg='用户已存在')
 	#生成6位数短信随机数,使用随机数模块
 	sms_code='%06d' % random.randint (0, 999999)
+	print(sms_code)
 	try:
 		redis_store.setex('SMSCode_'+mobile,constants.SMS_CODE_REDIS_EXPIRES,sms_code)
 	except Exception as e:
@@ -169,7 +171,7 @@ def send_sms_code():
 	else:
 		return jsonify(errno=RET.THIRDERR,errmsg='发送失败')
 
-@passport_blue.route('/register',method=['POST'])
+@passport_blue.route('/register',methods=['POST'])
 def register():
 	"""
 	用户注册
@@ -240,6 +242,129 @@ def register():
 	session['nick_name']=mobile
 	# 返回结果
 	return jsonify(errno=RET.OK,errmsg='注册成功')
+
+@passport_blue.route("/login",methods=['POST'])
+def login():
+	"""
+	用户登录
+	1、获取参数:mobile,password
+	2、检查参数完整性
+	3、检查手机号的格式
+	4、根据手机号查询数据库,确认用户user存在
+	5、调用模型类检查密码是否正确的方法
+	6、记录用户的登录时间
+	 user.last_login=datetime.now()
+	7、提交数据库,如果发生异常需要回滚
+	8、缓存用户信息session,昵称要换成user.nick_name
+	8、返回结果
+	:return:
+	"""
+	# 获取参数
+	mobile=request.json.get('mobile')
+	password=request.json.get('password')
+
+	# 检查参数的完整性
+	if not all([mobile,password]):
+		return jsonify(errno=RET.PARAMERR,errmsg='参数缺失')
+	# 检查手机号格式
+	if not re.match(r'1[3456789]\d{9}$',mobile):
+		return jsonify(errno=RET.PARAMERR,errmsg='手机号格式错误')
+
+	# 根据手机号查询数据库,确认用户已注册.
+	try:
+		user=User.query.filter_by(mobile=mobile).first()
+	except Exception as e:
+		current_app.logger.error(e)
+		return jsonify(errno=RET.DBERR,errmsg='查询用户数据失败')
+
+	# 判断用户是否注册,以及密码是否正确.
+	if user is None or not user.check_password(password):
+		return jsonify(errno=RET.DATAERR,errmsg='用户名或密码错误')
+	# 记录用户的登录时间
+	user.last_login=datetime.now()
+	# 提交数据到数据库中
+	try:
+		db.session.add(user)
+		db.session.commit()
+	except Exception as e:
+		current_app.logger.error(e)
+		db.session.rollback()
+		return jsonify(errno=RET.DBERR,errmsg='保存数据失败')
+
+	# 缓存用户信息到redis数据库中
+	session['user_id']=user.id
+	session['mobile']=mobile
+	# 缓存的用户昵称和注册时要有区别,因为登录可以登录多次,昵称有可能会修改
+	session['nick_name']=user.nick_name
+	# 返回结果
+	return jsonify(errno=RET.OK,errmsg='ok')
+
+
+@passport_blue.route("/logout")
+def logout():
+	"""
+	如果是前后端分离,以及符合RESTful风格,(表现层状态转换),退出的请求方法为delete
+	get/post/put/delete 获取/新建/修改/删除
+	退出登录
+	1、本质是清除服务器缓存的用户信息
+	:return:
+	"""
+	session.pop('user_id',None)
+	session.pop('mobile',None)
+	session.pop('nick_name',None)
+	return jsonify(errno=RET.OK,errmsg='OK')
+	pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
